@@ -21,7 +21,7 @@ app.use(session({
 
 // 몽고DB 연결
 function connectDB() {
-  var databaseUrl = "mongodb://<Admin>:<admin1234>@ds061335.mlab.com:61335/tictactoe-test";
+  var databaseUrl = "mongodb://Admin:admin1234@ds061335.mlab.com:61335/tictactoe-test";
 
   // DB 연결
   mongodb.connect(databaseUrl, function(err, database) {
